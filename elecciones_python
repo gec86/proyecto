@@ -1,0 +1,15 @@
+
+candidato_1 = int(input("Cantidad de votos: "))
+candidato_2 = int(input("Cantidad de votos: "))
+
+votos_totales = candidato_1 + candidato_2
+
+print(votos_totales)
+
+
+porcentaje_1 = round((candidato_1 * 100) / votos_totales, 2)
+
+porcentaje_2 = round(100 - porcentaje_1, 2)
+
+print("El primer candidato obtubvo el", porcentaje_1, "% por ciento de los votos")
+print("El primer candidato obtubvo el", porcentaje_2, "% por ciento de los votos")
